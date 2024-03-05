@@ -75,6 +75,17 @@ class Search extends React.Component {
                         />
                         <span>Series Only</span>
                     </label>
+                    <label>
+                        <input
+                            className="with-gap"
+                            name="group"
+                            type="radio"
+                            checked={this.state.type === "game"}
+                            data-type="game"
+                            onChange={this.handleFilter}
+                        />
+                        <span>Game</span>
+                    </label>
                 </div>
             </div>
         )
